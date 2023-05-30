@@ -1,0 +1,162 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+    /* CSS reset */
+    html{
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        height: 99%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* opacity: 0.7; */
+        color: antiquewhite;
+    }
+    main{
+        height: 100%;
+        background-color: darkmagenta;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 22px;
+        top: 20px;
+    }
+
+    .left div {
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: x-large;
+    }
+
+    .left img {
+        display: block;
+        margin: auto;
+        width: 25px;
+        height: 50px;
+    }
+
+    .middle {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 22px;
+        top: 20px;
+    }
+
+    /* .navbar{
+        background-color: rgb(105, 54, 65);
+    } */
+    .navbar li {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        margin: 20px auto;
+    }
+
+    .navbar li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 34px 11px;
+        font-size: x-large;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: rgb(77, 38, 38);
+        text-decoration: underline;
+        padding: 34px 11px;
+    }
+
+    .btr {
+        background-color: rgb(216, 120, 120);
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+        font-family: 'Bebas Neue', cursive;
+        border-radius: 10px;
+        padding: 11px 19px;
+    }
+
+    .btr:hover {
+        color: rgb(77, 38, 38);
+        text-decoration: underline;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .container {
+
+        margin: 50px 25px;
+        padding: 55px 50px;
+        border-radius: 39px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    h1{
+        font-size: 44px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    .container button{
+        display: inline;
+        width: 250px;
+        margin: auto;
+    }
+    .foot{
+        bottom: 0px;
+        background-color: aliceblue;
+        top: 0px;
+        color: black;
+    }
+</style>
+<main>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <div>Korem</div>
+        </div>
+        <!-- middle for navbar -->
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Portfolios</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Headers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <form action="/logout?_method=DELETE" method="POST">
+                <button class="btr"type="submit">Log out</button>
+            </form>
+            <button class="btr">E-MAil us</button>
+        </div>
+    </header>
+<div class="container">
+    <h1>PERFECT IMAGES FOR PERFECT WEBSITES</h1>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus quod eos?</h3>
+    <form action="noaction.php">
+        <button class="btr">EXPLORE MORE</button>
+        <button class="btr">BUY NOW</button>
+    </form>
+</div>
+</main>
+<footer class="foot">
+    <div>
+    this is a footer.
+</div>
+</footer>
+

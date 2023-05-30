@@ -1,0 +1,87 @@
+<title>Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+<style>
+    html{
+        height: 100%;
+        width: 100%;
+    }
+    body{
+        background-color: rgb(91, 124, 231);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 600px;
+        width: 30%;
+        margin: 30px auto;
+        border-radius: 1rem;
+        /* align-items: center; */
+        padding: 26px 16px;
+        /* justify-content: center; */
+    }
+    input{
+        width: 80%;
+        margin: 15px 45px;
+        padding: 7px 5px;
+        border-radius: 2px;
+        border: 1px solid rgb(194, 192, 192);
+    }
+    hr{
+        color: rgb(109, 106, 106);
+    }
+    h1{
+        text-align: center;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+    .btr{
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        width: 100%;
+        margin: 15px 3px;
+        padding: 7px 5px;
+        background-color: rgb(91, 124, 231);
+        border: 1px solid rgb(91, 124, 231);
+        border-radius: 10px;
+        box-shadow: 2px;
+        font-size: 16px;
+        color: white;
+    }
+    .btr:hover{
+        background-color: rgb(69, 107, 231);
+        border: 1px solid  rgb(69, 107, 231);
+    }
+    .foot{
+        text-align: center;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        margin: 15px 3px;
+        padding: 7px 5px;
+    }
+</style>
+<div class="container">
+<h1>New User</h1>
+<form action="register" method="POST">
+<div class = "entry">
+    <input type="text" id="name" name="name" placeholder="Enter your Name"
+    required>
+</div>
+<div class = "entry">
+    <input type="email" id="email" name="email" placeholder="Enter your email-id"
+    required>
+</div>
+<div class = "entry">
+    <input type="text" id="phone" name="phone" placeholder="Enter your Phone number"
+    required>
+</div>
+<div class = "entry">
+    <input type="password" id="password" name="password" placeholder="Enter Password"
+    required>
+</div>
+<button class="btr">Register</button>
+</form> 
+<div class="foot">
+Already registered
+<a href="/login">Login</a>
+</div>
+</div>

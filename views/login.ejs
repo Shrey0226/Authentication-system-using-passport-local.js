@@ -1,0 +1,87 @@
+<title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+
+    <style>
+        html{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: rgb(91, 124, 231);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            height: 400px;
+            width: 30%;
+            margin: 100px auto;
+            border-radius: 1rem;
+            /* align-items: center; */
+            padding: 26px 16px;
+            /* justify-content: center; */
+        }
+        input{
+            width: 80%;
+            margin: 15px 45px;
+            padding: 7px 5px;
+            border-radius: 2px;
+            border: 1px solid rgb(194, 192, 192);
+            cursor: text;
+        }
+        hr{
+            color: rgb(109, 106, 106);
+        }
+        h1{
+            text-align: center;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+        .btr{
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            width: 100%;
+            margin: 15px 3px;
+            padding: 7px 5px;
+            background-color: rgb(91, 124, 231);
+            border: 1px solid rgb(91, 124, 231);
+            border-radius: 10px;
+            box-shadow: 2px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+        .btr:hover{
+            background-color: rgb(69, 107, 231);
+            border: 1px solid  rgb(69, 107, 231);
+        }
+        .foot{
+            text-align: center;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            margin: 15px 3px;
+            padding: 7px 5px;
+        }
+    </style>
+   <div class="container">
+    <h1>SIGN UP</h1>
+    <% if(messages.error) { %>
+        <%= messages.error %> 
+        <% } %>
+   <form action="login" method="POST">
+    <div class = "entry">
+        <input type="email" id="email" name="email" placeholder="User E-mail-Id"
+        required>
+    </div>
+    <div class = "entry">
+        <input type="password" id="password" name="password" placeholder="Password"
+        required>
+    </div>
+    <button class="btr">Login</button>
+   </form> 
+   
+   <hr>
+   <div class="foot">
+    New user/
+   <a href="/register">register</a>
+   </div>
+   </div>
